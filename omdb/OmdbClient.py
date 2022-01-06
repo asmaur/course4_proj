@@ -1,3 +1,9 @@
+import logging
+import requests
+
+logger = logging.getLogger(__name__)
+OMDB_API_URL = "https://jsonplaceholder.typicode.com/todos/1"
+
 class OmdbClient:
     def __init__(self, api_key):
         self.api_key = api_key

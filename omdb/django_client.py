@@ -1,6 +1,9 @@
 from django.conf import settings
 
-from omdb.client import OmdbClient
+from omdb.OmdbClient import OmdbClient
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def get_client_from_settings():
